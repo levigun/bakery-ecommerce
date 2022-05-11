@@ -146,37 +146,19 @@ db.once('open', async () => {
         name: 'Brioche Custard',
         category: categories[1]._id,
         description:
-          'Brioche dough baked with custard and strawberry',
+          'Brioche dough baked with custard and seasonal fruit',
         image: 'brioche-custard.jpg',
         price: 4.50,
         quantity: 12
     },
     {
-      name: 'White Bread',
+      name: 'Bread Loaves',
       category: categories[2]._id,
       description:
-        'Soft white loaf, comes sliced or unsliced',
-      image: 'white-bread.jpg',
+        'Soft white loaf, wholemeal, seeded, and high top, comes sliced or unsliced',
+      image: 'bread.jpg',
       price: 4.60,
       quantity: 15
-    },
-    {
-      name: 'Wholemeal Bread',
-      category: categories[2]._id,
-      description:
-        'Soft white loaf, comes sliced or unsliced',
-      image: 'wholemeal.jpg',
-      price: 4.60,
-      quantity: 6
-    },
-    {
-      name: 'Hightop Bread',
-      category: categories[2]._id,
-      description:
-        'Comes in white, wholemeal, or seeded',
-      image: 'hightop.jpg',
-      price: 4.60,
-      quantity: 10
     },
     {
       name: 'Bread Rolls',
