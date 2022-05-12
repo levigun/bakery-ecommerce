@@ -26,22 +26,13 @@ db.once('open', async () => {
       quantity: 30
     },
     {
-      name: 'Plain Sausage Rolls',
+      name: 'Sausage Rolls',
       description:
-        'Classic sausage meat wrapped in a flaky puff pastry',
+        'Plain or with cheese and bacon',
       image: 'sausage-roll.jpg',
       category: categories[0]._id,
-      price: 4.00,
-      quantity: 30
-    },
-    {
-      name: 'Cheese and Bacon Sausage Roll',
-      category: categories[0]._id,
-      description:
-        'Our classic sausage roll with an extra addition of delicious bacon and cheese',
-      image: 'cb-sausage-roll.jpg',
       price: 4.50,
-      quantity: 20
+      quantity: 30
     },
     {
       name: 'Apple Turnovers',
