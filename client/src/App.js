@@ -9,15 +9,15 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 import Homepage from './pages/Homepage';
-// import Detail from './pages/Detail';
-// import Shop from './pages/Shop';
-// import NoMatch from './pages/NoMatch';
-// import Login from './pages/Login';
-// import Signup from './pages/Signup';
+import Detail from './pages/Detail';
+import Shop from './pages/Shop';
+import NoMatch from './pages/NoMatch';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import Nav from './components/Nav';
-// import { StoreProvider } from './utils/GlobalState';
-// import Success from './pages/Success';
-// import OrderHistory from './pages/OrderHistory';
+import { StoreProvider } from './utils/GlobalState';
+import Success from './pages/Success';
+import OrderHistory from './pages/OrderHistory';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -43,43 +43,43 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          {/* <StoreProvider> */}
+          <StoreProvider>
             <Nav />
             <Routes>
-              <Route 
-                path="/" 
-                element={<Homepage />} 
+              <Route
+                path="/"
+                element={<Homepage />}
               />
-               {/* <Route 
-                path="/" 
-                element={<Shop />} 
-              /> */}
-              {/* <Route 
-                path="/login" 
-                element={<Login />} 
+              <Route
+                path="/shop"
+                element={<Shop />}
               />
-              <Route 
-                path="/signup" 
-                element={<Signup />} 
+              <Route
+                path="/login"
+                element={<Login />}
               />
-              <Route 
-                path="/success" 
-                element={<Success />} 
+              <Route
+                path="/signup"
+                element={<Signup />}
               />
-              <Route 
-                path="/orderHistory" 
-                element={<OrderHistory />} 
+              <Route
+                path="/success"
+                element={<Success />}
               />
-              <Route 
-                path="/products/:id" 
-                element={<Detail />} 
+              <Route
+                path="/orderHistory"
+                element={<OrderHistory />}
               />
-              <Route 
-                path="*" 
-                element={<NoMatch />} 
-              /> */}
+              <Route
+                path="/products/:id"
+                element={<Detail />}
+              />
+              <Route
+                path="*"
+                element={<NoMatch />}
+              />
             </Routes>
-          {/* </StoreProvider> */}
+          </StoreProvider>
         </div>
       </Router>
     </ApolloProvider>
