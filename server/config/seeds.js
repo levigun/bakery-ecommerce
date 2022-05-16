@@ -93,7 +93,7 @@ db.once('open', async () => {
         category: categories[1]._id,
         description:
           'Our brownies are gluten free and they taste exactly as good as a normal decadent brownies.',
-        image: 'brownie.jpg',
+        image: 'brownies.jpg',
         price: 4.50,
         quantity: 15
     },
