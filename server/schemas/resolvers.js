@@ -1,7 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
-const stripe = require('stripe')('pk_test_L1f0e3XAzjsG7jtp4uN7L9ql');
+const stripe = require('stripe')('sk_test_wsFx86XDJWwmE4dMskBgJYrt');
 
 const resolvers = {
   Query: {
