@@ -14,6 +14,13 @@ import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 import spinner from '../images/spinner.gif';
 
+const styles = {
+  imageSize: {
+    width:'600px',
+    height: '750px'
+  }
+}
+
 function Detail() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
@@ -84,7 +91,7 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
+        <div className="container my-1 align-items-center justify-content-center">
           <Link to="/shop">← Back to Shop</Link>
 
           <h2>{currentProduct.name}</h2>
@@ -105,6 +112,7 @@ function Detail() {
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
+            style={styles.imageSize}
           />
         </div>
       ) : null}
