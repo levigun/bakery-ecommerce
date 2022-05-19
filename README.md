@@ -36,3 +36,6 @@ https://glenreagh-bakery.herokuapp.com/
 * Heroku App
 
 ## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
